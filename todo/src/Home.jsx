@@ -7,18 +7,38 @@ const Home = () => {
     const itemEvents = (event) =>{
        setInputList(event.target.value);
     };
-    const listofitem =() =>{};
+    const [Items,setItems]=useState([]);
+    const listofitem =() =>{
+      setItems( (olditems) =>{
+        return [...olditems,inputList];
+      })
+      setInputList('');
+    };
     return(
       <>
       <div className="main_div">
         <div className="center_div">
           <br />
           <h1>Todo list</h1>
-          <input type="text" placeholder="Add an item" onChange={itemEvents}/>
+          <input type="text" placeholder="Add an item" value={inputList} onChange={itemEvents}/>
           <button onClick={listofitem}>  + </button>
 
           <ol>
-            <li>{inputList}</li>
+            
+           { Items.map( (itemval) =>{
+             
+              return  (
+                <>
+                <div className="delete">
+             <i className="fas fa-trash" aria-hidden="true"/>
+             <li>{itemval}</li>
+             
+             
+              
+              </div>
+              </>
+              )
+            })}
           </ol>
         </div>
       </div>

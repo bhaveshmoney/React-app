@@ -10,7 +10,7 @@
    align-items: center;
    text-align: center;
 
-}
+} 
 .center_div{
     width: 25%;
     height: 80vh;
@@ -47,7 +47,7 @@ button{
     color: white;
     border: none;
     outline: none;
-    margin-left: 10px;
+    margin-left: 10 px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0,0, 0.3);
 }
 button:hover{
@@ -55,6 +55,7 @@ button:hover{
 }
 ol{
     margin-top: 30px;
+    margin-left:20px
 }
 ol li{
     padding-left: 0px;
@@ -66,4 +67,9 @@ ol li{
     align-items: center;
     color: violet;
     text-transform: capitalize;
+}
+.delete{
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
