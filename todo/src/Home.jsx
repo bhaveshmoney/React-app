@@ -30,7 +30,7 @@ const Home = () => {
               return  (
                 <>
                 <div className="delete">
-             <i className="fas fa-trash" aria-hidden="true"/>
+             <i className="far fa-trash"/>
              <li>{itemval}</li>
              
              
