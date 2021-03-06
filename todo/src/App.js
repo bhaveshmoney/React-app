@@ -1,12 +1,16 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
-import Home from "./Home"
+import Home from "./Components/add_todo/Home"
+
+
 
 const App = () => {
   return(
      <>
       <Switch>
-        <Route path="/" component={Home}    />
+      
+        <Route exact path="/" component={Home}    />
+        
       </Switch>
 
      </>
